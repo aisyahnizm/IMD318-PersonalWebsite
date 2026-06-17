@@ -1,0 +1,367 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Aisyah's Experience 💼</title>
+    <!-- Import Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@600&family=Raleway:wght@700&display=swap" rel="stylesheet">
+    <style>
+        * { box-sizing: border-box; }
+
+        html, body {
+           height: 100%;
+		   margin: 0;
+           display: flex;
+           flex-direction: column;
+           font-family: Poppins, sans-serif;
+		   font-size: 16px;
+           background: url('wallpaper3.jpg') no-repeat center center fixed;
+           background-size: cover;
+           color: #333;
+        }
+        header {
+            background: #022e4a;
+            background-image: url('pantai.jpg');
+            background-size: 2000px 300px;
+            color: #ffffff;
+            padding: 20px ;
+            text-align: center;
+        }
+        header h1 {
+            margin: 0;
+            font-size: 2.5em;
+            font-family: 'Raleway', sans-serif;
+            animation: bounce 1s infinite;
+        }
+        @keyframes bounce {
+            0%, 100% { transform: translateY(0); }
+            50% { transform: translateY(-10px); }
+        }
+        nav {
+            background: #507593;
+            padding: 10px;
+            text-align: center;
+            position: sticky;
+            top: 0;
+        }
+        nav a {
+            color: #ffffff;
+            margin: 15px;
+            text-decoration: none;
+            font-weight: bold;
+        }
+        nav a:hover { color: yellow;}
+
+        main { flex: 1; }
+        section { padding: 40px; max-width: 1000px; margin: auto; }
+        h2 { color: #022e4a; border-bottom: 2px solid #022e4a; padding-bottom: 5px; }
+
+        /* ===== TABLE STYLE ===== */
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-top: 20px;
+        }
+        thead {
+            background-color: #022e4a;
+            color: #fff;
+        }
+        th, td {
+            padding: 12px;
+            border: 1px solid #56081d;
+            text-align: left;
+            vertical-align: top;
+        }
+        tbody tr:nth-child(even) {
+            background-color: #e2d8cb;
+        }
+        tbody tr:nth-child(odd) {
+            background-color: #f9f9f9;
+        }
+
+        /* ===== SLIDESHOW STYLE ===== */
+        .slideshow-container {
+            position: relative;
+            max-width: 300px;
+            margin: auto;
+            background-color: #c6813f; /* nude background */
+            border-radius: 10px;
+            padding: 10px;
+        }
+        .mySlides {
+            display: none;
+        }
+        .mySlides img {
+            width: 100%;
+            border-radius: 8px;
+        }
+        .caption {
+            text-align: center;
+            font-size: 14px;
+            color: #000000;
+            margin-top: 8px;
+        }
+        .prev, .next {
+            cursor: pointer;
+            position: absolute;
+            top: 40%;
+            width: auto;
+            padding: 8px;
+            color: white;
+            font-weight: bold;
+            font-size: 18px;
+            transition: 0.3s;
+            border-radius: 3px;
+            user-select: none;
+            background-color: rgba(0,0,0,0.5);
+        }
+        .next {
+            right: 0;
+        }
+        .prev:hover, .next:hover {
+            background-color: rgba(0,0,0,0.8);
+        }
+
+/* Kotak pengalaman */
+.experience-box {
+  background-color: #f8f0e5;
+  border-radius: 10px;
+  padding: 20px;
+  margin-bottom: 40px;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+  border: 0px solid #f8f0e5;
+}
+
+/* Tajuk kecil */
+.experience-box h3 {
+  margin-top: 0;
+  color: #44201c;
+}
+
+/* Dua kolum What I Do / What I Get */
+.columns {
+  display: flex;
+  gap: 20px;
+  flex-wrap: wrap;
+}
+.column {
+  flex: 1;
+  background: #ffffff;
+  border-radius: 8px;
+  border: 3px solid #c6813f;
+  padding: 15px;
+}
+.column h4 {
+  margin-top: 0;
+  color: #022e4a;
+}
+ul {
+  margin: 0;
+  padding-left: 20px;
+}
+
+/* Slideshow */
+.slideshow-container {
+  position: relative;
+  max-width: 300px;
+  margin: 20px auto;
+  border-radius: 10px;
+  overflow: hidden;
+}
+.mySlides {
+  display: none;
+}
+.mySlides img {
+  width: 100%;
+  border-radius: 8px;
+}
+.caption {
+  text-align: center;
+  font-size: 14px;
+  color: #565538;
+  margin-top: 8px;
+}
+.prev, .next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  padding: 8px;
+  color: white;
+  font-weight: bold;
+  font-size: 18px;
+  border-radius: 3px;
+  user-select: none;
+  background-color: #56081d;
+}
+.next { right: 0; }
+.prev:hover, .next:hover { background-color: rgba(0,0,0,0.8); }
+
+footer {
+            background: #507593;
+            color: #ffffff;
+            text-align: center;
+            padding: 15px;
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <br>
+        <h1>Welcome to Aisyah's World</h1>
+        <p>A journey through my passions, growth and experiences</p>
+        <br>
+    </header>
+
+    <nav>
+        <a href="index.html">HOME</a>
+        <a href="about me.html">ABOUT ME</a>
+        <a href="experience.html">EXPERIENCE</a>
+        <a href="education.html">EDUCATION</a>
+        <a href="family.html">FAMILY</a>
+        <a href="gallery.html">GALLERY</a>
+    </nav>
+
+    <section id="experience">
+  <h2>Experience</h2>
+<p> Every role I’ve taken has taught me valuable lessons about responsibility, teamwork and growth. My experiences reflect not only the skills I’ve gained but also the dedication I bring to every task.</p>
+<br>
+
+  <!-- Cashier -->
+  <div class="experience-box">
+    <h3>Cashier at Speedmart 99 (May 2023 – Jul 2023)</h3>
+    <div class="columns">
+      <div class="column">
+        <h4>What I Do</h4>
+        <ul>
+          <li>Handle daily transactions</li>
+          <li>Assist customers with purchases</li>
+          <li>Organize and restock shelves</li>
+          <li>Check and count inventory</li>
+        </ul>
+      </div>
+      <div class="column">
+        <h4>What I Get</h4>
+        <ul>
+          <li>Learn responsibility and time management</li>
+          <li>Improve customer service skills</li>
+          <li>Understand store operations</li>
+          <li>Gain teamwork experience</li>
+        </ul>
+      </div>
+    </div>
+    <div class="slideshow-container">
+      <div class="mySlides cash"><img src="speedmart1.jpg"><div class="caption">Checking stock take</div></div>
+      <div class="mySlides cash"><img src="speedmart2.jpg"><div class="caption">Cash closing</div></div>
+      <div class="mySlides cash"><img src="speedmart3.jpg"><div class="caption">Sign up resign form</div></div>
+      <a class="prev" onclick="plusSlides(-1,0)">&#10094;</a>
+      <a class="next" onclick="plusSlides(1,0)">&#10095;</a>
+    </div>
+  </div>
+
+  <!-- Barista -->
+  <div class="experience-box">
+    <h3>Barista at Gigi Coffee (Aug 2024 – Sept 2024)</h3>
+    <div class="columns">
+      <div class="column">
+        <h4>What I Do</h4>
+        <ul>
+          <li>Prepare coffee and beverages</li>
+          <li>Manage customer orders</li>
+          <li>Create latte art</li>
+          <li>Maintain workstation cleanliness</li>
+        </ul>
+      </div>
+      <div class="column">
+        <h4>What I Get</h4>
+        <ul>
+          <li>Develop multitasking skills</li>
+          <li>Improve communication and teamwork</li>
+          <li>Learn beverage preparation techniques</li>
+          <li>Enhance customer interaction</li>
+        </ul>
+      </div>
+    </div>
+    <div class="slideshow-container">
+      <div class="mySlides barista"><img src="gigi1.jpg"><div class="caption">Learn doing coffee latte</div></div>
+      <div class="mySlides barista"><img src="gigi2.jpg"><div class="caption">Success learn make frappe</div></div>
+      <div class="mySlides barista"><img src="gigi3.jpg"><div class="caption">Clean grease trap</div></div>
+      <a class="prev" onclick="plusSlides(-1,1)">&#10094;</a>
+      <a class="next" onclick="plusSlides(1,1)">&#10095;</a>
+    </div>
+  </div>
+
+  <!-- Internship -->
+  <div class="experience-box">
+    <h3>Intern at Imanpuri Sdn Bhd (Feb 2025 – Apr 2025)</h3>
+    <div class="columns">
+      <div class="column">
+        <h4>What I Do</h4>
+        <ul>
+          <li>Assist in web design projects</li>
+          <li>Create digital content</li>
+          <li>Support IT team tasks</li>
+          <li>Join meetings and collaborate</li>
+        </ul>
+      </div>
+      <div class="column">
+        <h4>What I Get</h4>
+        <ul>
+          <li>Gain HTML & CSS experience</li>
+          <li>Improve digital design skills</li>
+          <li>Learn project collaboration</li>
+          <li>Understand IT team workflow</li>
+        </ul>
+      </div>
+    </div>
+    <div class="slideshow-container">
+      <div class="mySlides intern"><img src="iman1.JPG"><div class="caption">Key in data in system</div></div>
+      <div class="mySlides intern"><img src="iman2.JPG"><div class="caption">Checking payment voucher</div></div>
+      <div class="mySlides intern"><img src="iman3.JPG"><div class="caption">Arrange receipt properly</div></div>
+      <a class="prev" onclick="plusSlides(-1,2)">&#10094;</a>
+      <a class="next" onclick="plusSlides(1,2)">&#10095;</a>
+    </div>
+  </div>
+</section>
+
+<script>
+let slideIndex = [1,1,1]; // index untuk setiap slideshow
+
+// initialize semua slideshow
+showSlides(1,0);
+showSlides(1,1);
+showSlides(1,2);
+
+function plusSlides(n,no){
+  showSlides(slideIndex[no]+=n,no);
+}
+
+function showSlides(n,no){
+  let i, slides;
+  if(no===0){slides=document.getElementsByClassName("cash");}
+  if(no===1){slides=document.getElementsByClassName("barista");}
+  if(no===2){slides=document.getElementsByClassName("intern");}
+  if(n>slides.length){slideIndex[no]=1}
+  if(n<1){slideIndex[no]=slides.length}
+  for(i=0;i<slides.length;i++){slides[i].style.display="none";}
+  slides[slideIndex[no]-1].style.display="block";
+}
+</script>
+
+    
+    <footer>
+        <a href="https://www.instagram.com/aisyahnizm_" target="_blank">
+            <img src="insta2.png" alt="Instagram" width="100" height="100">
+        </a>
+        <a href="https://t.me/imutgal" target="_blank">
+            <img src="tele3.png" alt="Telegram" width="100" height="100">
+        </a>
+        <a href="https://www.tiktok.com/@imutgall" target="_blank">
+            <img src="tiktok2.png" alt="TikTok" width="100" height="100">
+        </a>
+        <br>
+        <a href="https://mail.google.com/mail/?view=cm&fs=1&to=aisyahnajihah3003@gmail.com" target="_blank">Email Me !</a>
+        <p>&copy;2026 Aisyah Najihah | All Rights Reserved</p>
+    </footer>
+</body>
+</html>

@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Aisyah's Biodata 👤</title>
+    <!-- Import Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&family=Raleway:wght@700&display=swap" rel="stylesheet">
+    <style>
+        html, body {
+           height: 100%;
+		   margin: 0;
+           display: flex;
+           flex-direction: column;
+           font-family: Poppins, sans-serif;
+		   font-size: 16px;
+           background: url('wallpaper3.jpg') no-repeat center center fixed;
+           background-size: cover;
+           color: #333;
+        }
+         header {
+            background: #022e4a;
+            background-image: url('pantai.jpg');
+            background-size: 2000px 300px;
+            color: #ffffff;
+            padding: 20px 0;
+            text-align: center;
+        }
+        header h1 {
+            margin: 0;
+            font-size: 2.5em;
+            font-family: 'Raleway', sans-serif;
+            animation: bounce 1s infinite;
+        }
+        @keyframes bounce {
+            0%, 100% { transform: translateY(0); }
+            50% { transform: translateY(-10px); }
+        }
+        nav {
+            background: #507593;
+            padding: 10px;
+            text-align: center;
+        }
+        nav a {
+            color: #ffffff;
+            margin: 0 15px;
+            text-decoration: none;
+            font-weight: bold;
+        }
+        nav a:hover { color: yellow; }
+
+        main {
+            flex: 1;
+        }
+        .container {
+            display: flex;
+            justify-content: center;
+            gap: 30px;
+            margin: 30px;
+            flex-wrap: wrap;
+        }
+        section {
+            background-color: #f8f0e5;
+            padding: 30px;
+            width: 650px;
+            border-radius: 20px;
+            box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+        }
+        h2 {
+            color: #022e4a;
+            border-bottom: 2px solid #022e4a;
+            padding-bottom: 5px;
+            font-family: 'Raleway', sans-serif;
+        }
+        /* Custom Fun Facts List */
+        ul.custom-list {
+            list-style: none;
+            padding-left: 0;
+        }
+        ul.custom-list li {
+            margin: 10px;
+            padding-left: 50px;
+            background: url('star.png') no-repeat left center;
+            background-size: 20px 20px;
+        }
+
+        /* Favourite Food Box */
+        .food-box {
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+            padding: 20px;
+            background: none;
+            box-shadow: none;
+        }
+        .food-item {
+            text-align: center;
+        }
+        .food-item img {
+            width: 200px;   
+            height: 200px;
+            border-radius: 10px;
+            object-fit: cover;
+            border: none;   
+            transition: transform 0.3s;
+        }
+        .food-item img:hover {
+            transform: scale(1.05);
+        }
+        .food-item p {
+            margin-top: 8px;
+            font-weight: bold;
+            color: #022e4a;
+        }
+
+        footer {
+            background: #507593;
+            color: #ffffff;
+            text-align: center;
+            padding: 15px;
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <h1>Welcome to Aisyah's World</h1>
+        <p>A journey through my passions, growth and experiences</p>
+    </header>
+
+    <nav>
+        <a href="index.html">HOME</a>
+        <a href="about me.html">ABOUT ME</a>
+        <a href="experience.html">EXPERIENCE</a>
+        <a href="education.html">EDUCATION</a>
+        <a href="family.html">FAMILY</a>
+        <a href="gallery.html">GALLERY</a>
+    </nav>
+
+    <main>
+        <div class="container">
+            <!-- About Me Section -->
+            <section id="about">
+                <h2>About Me</h2>
+                <div style="text-align: center;">
+  <img src="aisyob3.jpeg" alt="My Picture" width="400" height="340">
+</div>
+
+                <p><strong>Name:</strong> Aisyah Najihah Binti Mohd Nizam</p>
+                <p><strong>Age:</strong> 21 Years Old</p>
+                <p><strong>Date of Birth:</strong> 30 March 2005</p>
+                <p><strong>Place of Birth:</strong> Selangor, Malaysia</p>
+            </section>
+
+            <!-- Fun Facts Section -->
+            <section id="funfacts">
+                <h2>Fun Facts About Me</h2>
+                <ul class="custom-list">
+                    <li>I love matcha lattes.</li>
+                    <li>I enjoy organizing and keeping things neat.</li>
+                    <li>I’m a big fan of The Weeknd.</li>
+                    <li>I like singing random lyrics for fun.</li>
+                    <li>Exploring new places excites me to try new things.</li>
+                    <li>I’m a cat lover.</li>
+                </ul>
+            </section>
+
+            <!-- Favourite Food Section -->
+            <section id="favfood">
+                <h2>My Favourite Food</h2>
+                <div class="food-box">
+                    <div class="food-item">
+                        <a href="https://mykoreankitchen.com/tteokbokki-spicy-rice-cakes/" target="_blank">
+                            <img src="tokbokki.png" alt="Pizza">
+                        </a>
+                        <p>Tteokbokki</p>
+                    </div>
+                    <div class="food-item">
+                        <a href="https://sipcoffeehouse.com/what-is-a-matcha-latte/" target="_blank">
+                            <img src="matcha.png" alt="Sushi">
+                        </a>
+                        <p>Matcha Latte</p>
+                    </div>
+                    <div class="food-item">
+                        <a href="https://prettysimplesweet.com/red-velvet-cake/" target="_blank">
+                            <img src="red velvet.png" alt="Ice Cream">
+                        </a>
+                        <p>Red Velvet Cake</p>
+                    </div>
+                </div>
+            </section>
+        </div>
+    </main>
+
+    <footer>
+        <a href="https://www.instagram.com/aisyahnizm_" target="_blank">
+            <img src="insta2.png" alt="Instagram" width="100" height="100">
+        </a>
+        <a href="https://t.me/imutgal" target="_blank">
+            <img src="tele3.png" alt="Telegram" width="100" height="100">
+        </a>
+        <a href="https://www.tiktok.com/@imutgall" target="_blank">
+            <img src="tiktok2.png" alt="TikTok" width="100" height="100">
+        </a>
+        <br>
+        <a href="https://mail.google.com/mail/?view=cm&fs=1&to=aisyahnajihah3003@gmail.com" target="_blank">Email Me !</a>
+        <p>&copy;2026 Aisyah Najihah | All Rights Reserved</p>
+    </footer>
+
+</body>
+</html>

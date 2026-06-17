@@ -1,0 +1,244 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Aisyah's Gallery  📸</title>
+	<!-- Import Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&family=Raleway:wght@700&display=swap" rel="stylesheet">
+    <style>
+        /* ====== GLOBAL STYLE ====== */
+         html, body {
+           height: 100%;
+           margin: 0;
+           display: flex;
+           flex-direction: column;
+           font-family: Poppins, sans-serif;
+           font-size: 16px;
+           font-weight: 600; /* semua teks bold */
+           background: url('wallpaper3.jpg') no-repeat center center fixed;
+           background-size: cover;
+           color: #333;
+        }
+        header {
+            background: #022e4a;
+            background-image: url('pantai.jpg');
+            background-size: 2000px 300px;
+            color: #ffffff;
+            padding: 20px 0;
+            text-align: center;
+        }
+        header h1 {
+            margin: 0;
+            font-size: 2.8em;
+            font-family: 'Raleway', sans-serif;
+            animation: bounce 1s infinite;
+        }
+        @keyframes bounce {
+            0%, 100% { transform: translateY(0); }
+            50% { transform: translateY(-10px); }
+        }
+
+        nav {
+            background: #507593;
+            padding: 10px;
+            text-align: center;
+            position: sticky;
+            top: 0;
+        }
+        nav a {
+            color: #ffffff;
+            margin: 0 15px;
+            text-decoration: none;
+            font-weight: bold;
+        }
+        nav a:hover { color: yellow;}
+
+        main {
+            flex: 1;
+        }
+
+        section {
+            padding: 40px;
+            max-width: 900px;
+            margin: auto;
+        }
+
+        h2 {
+            color: #022e4a;
+            border-bottom: 2px solid #022e4a;
+            padding-bottom: 5px;
+        }
+
+        /* ====== FILTER GALLERY STYLE ====== */
+        .filterDiv {
+            float: left;
+            width: 250px;
+            height: 250px;
+            margin: 10px;
+            display: none; /* default hidden */
+            text-align: center;
+        }
+        .filterDiv img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            border-radius: 15px;
+            border: 0px solid #507593;
+        }
+        .show {
+            display: block;
+        }
+        .container {
+            margin-top: 20px;
+            overflow: hidden;
+        }
+        .btn {
+            border: none;
+            outline: none;
+            padding: 12px 16px;
+            background-color: #f1f1f1;
+            cursor: pointer;
+            margin: 5px;
+            border-radius: 5px;
+        }
+        .btn:hover {
+            background-color: #407532;
+        }
+        .btn.active {
+            background-color: #022e4a;
+            color: #ffffff;
+        }
+
+        footer {
+            background: #507593;
+            color: #ffffff;
+            text-align: center;
+            padding: 15px;
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <h1>Welcome To Aisyah's World</h1>
+        <p>A journey through my passions, growth and experiences</p>
+    </header>
+
+    <nav>
+        <a href="index.html">HOME</a>
+        <a href="about me.html">ABOUT ME</a>
+        <a href="experience.html">EXPERIENCE</a>
+        <a href="education.html">EDUCATION</a>
+        <a href="family.html">FAMILY</a>
+        <a href="gallery.html">GALLERY</a>
+    </nav>
+
+    <main>
+        <!-- Gallery Section with Filter -->
+        <section id="gallery">
+            <h2>Gallery</h2>
+			
+<p>
+This gallery is a collection of my favorite memories and little moments that mean a lot to me. 
+From the skies I captured, the cats I adore, the foods I enjoyed and the times spent with friends, 
+each photo tells a simple story of happiness. It is a place where I keep the snapshots of life that 
+make me smile and remind me of the beauty in everyday experiences.
+</p>
+
+
+            <!-- Filter Buttons -->
+            <div id="myBtnContainer">
+              <button class="btn active" onclick="filterSelection('all')"> Show all</button>
+              <button class="btn" onclick="filterSelection('cars')"> Cats</button>
+              <button class="btn" onclick="filterSelection('animals')"> Foods</button>
+              <button class="btn" onclick="filterSelection('fruits')"> Friends</button>
+              <button class="btn" onclick="filterSelection('colors')"> Skies</button>
+            </div>
+
+            <!-- Filter Items with Images -->
+            <div class="container">
+              <div class="filterDiv cars"><img src="cat1.jpg" alt="BMW"></div>
+              <div class="filterDiv colors"><img src="skies3.jpg" alt="Orange"></div>
+              <div class="filterDiv fruits"><img src="friends7.jpg" alt="Melon"></div>
+              <div class="filterDiv cars"><img src="cat2.jpg" alt="Volvo"></div>
+              <div class="filterDiv colors"><img src="skies1.jpg" alt="Red"></div>
+              <div class="filterDiv cars"><img src="cat3.jpg" alt="Ford"></div>
+              <div class="filterDiv fruits"><img src="friends3.jpg" alt="Melon"></div>
+              <div class="filterDiv colors"><img src="skies2.jpg" alt="Blue"></div>
+              <div class="filterDiv animals"><img src="food1.jpg" alt="Cat"></div>
+              <div class="filterDiv animals"><img src="food2.jpg" alt="Dog"></div>
+              <div class="filterDiv fruits"><img src="friends5.jpg" alt="Melon"></div>
+              <div class="filterDiv animals"><img src="food3.jpg" alt="Kiwi"></div>
+              <div class="filterDiv fruits"><img src="friends2.jpg" alt="Banana"></div>
+              <div class="filterDiv colors"><img src="skies4.jpg" alt="Orange"></div>
+              <div class="filterDiv fruits"><img src="friends4.jpg" alt="Banana"></div>
+              <div class="filterDiv fruits"><img src="friends1.jpg" alt="Lemon"></div>
+              <div class="filterDiv colors"><img src="skies5.jpg" alt="Orange"></div>
+              <div class="filterDiv animals"><img src="food4.jpg" alt="Cow"></div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <a href="https://www.instagram.com/aisyahnizm_" target="_blank">
+            <img src="insta2.png" alt="Instagram" width="100" height="100">
+        </a>
+        <a href="https://t.me/imutgal" target="_blank">
+            <img src="tele3.png" alt="Telegram" width="100" height="100">
+        </a>
+        <a href="https://www.tiktok.com/@imutgall" target="_blank">
+            <img src="tiktok2.png" alt="TikTok" width="100" height="100">
+        </a>
+        <br>
+        <a href="https://mail.google.com/mail/?view=cm&fs=1&to=aisyahnajihah3003@gmail.com" target="_blank">Email Me !</a>
+        <p>&copy;2026 Aisyah Najihah | All Rights Reserved</p>
+    </footer>
+
+    <!-- ====== FILTER SCRIPT ====== -->
+    <script>
+    filterSelection("all")
+    function filterSelection(c) {
+      var x, i;
+      x = document.getElementsByClassName("filterDiv");
+      if (c == "all") c = "";
+      for (i = 0; i < x.length; i++) {
+        w3RemoveClass(x[i], "show");
+        if (x[i].className.indexOf(c) > -1) w3AddClass(x[i], "show");
+      }
+    }
+
+    function w3AddClass(element, name) {
+      var i, arr1, arr2;
+      arr1 = element.className.split(" ");
+      arr2 = name.split(" ");
+      for (i = 0; i < arr2.length; i++) {
+        if (arr1.indexOf(arr2[i]) == -1) {element.className += " " + arr2[i];}
+      }
+    }
+
+    function w3RemoveClass(element, name) {
+      var i, arr1, arr2;
+      arr1 = element.className.split(" ");
+      arr2 = name.split(" ");
+      for (i = 0; i < arr2.length; i++) {
+        while (arr1.indexOf(arr2[i]) > -1) {
+          arr1.splice(arr1.indexOf(arr2[i]), 1);     
+        }
+      }
+      element.className = arr1.join(" ");
+    }
+
+    // Add active class to the current button (highlight it)
+    var btnContainer = document.getElementById("myBtnContainer");
+    var btns = btnContainer.getElementsByClassName("btn");
+    for (var i = 0; i < btns.length; i++) {
+      btns[i].addEventListener("click", function(){
+        var current = document.getElementsByClassName("active");
+        current[0].className = current[0].className.replace(" active", "");
+        this.className += " active";
+      });
+    }
+    </script>
+
+</body>
+</html>

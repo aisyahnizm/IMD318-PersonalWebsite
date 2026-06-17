@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Aisyah's Family 👪</title>
+  <!-- Import Google Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&family=Raleway:wght@700&display=swap" rel="stylesheet">
+  <style>
+     html, body {
+           height: 100%;
+           margin: 0 ;
+           display: flex;
+           flex-direction: column;
+           font-family: Poppins, sans-serif;
+           font-size: 16px;
+           font-weight: 600; /* semua teks bold */
+           background: url('wallpaper3.jpg') no-repeat center center fixed;
+           background-size: cover;
+           color: #333;
+        }
+        header {
+            background: #022e4a;
+            background-image: url('pantai.jpg');
+            background-size: 2000px 300px;
+            color: #ffffff;
+            padding: 20px ;
+            text-align: center;
+        }
+        header h1 {
+            margin: 0;
+            font-size: 2.5em;
+            font-family: 'Raleway', sans-serif;
+            font-weight: 700; /* heading lebih bold */
+            animation: bounce 1s infinite;
+        }
+        @keyframes bounce {
+            0%, 100% { transform: translateY(0); }
+            50% { transform: translateY(-10px); }
+        }
+
+    nav {
+      background: #507593;
+      padding: 10px;
+      text-align: center;
+      position: sticky;
+      top: 0;
+    }
+    nav a {
+      color: #ffffff;
+      margin: 15px;
+      text-decoration: none;
+      font-weight: 700; /* bold menu */
+    }
+    nav a:hover { color: yellow; }
+
+    main { flex: 1; }
+    section { padding: 40px; max-width: 1000px; margin: auto; }
+    h2 { color: #022e4a; border-bottom: 2px solid #022e4a; padding-bottom: 5px; font-weight: 700; }
+
+    /* ===== FAMILY GRID ===== */
+    .gallery-grid {
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      gap: 20px;
+    }
+    .container {
+      position: relative;
+      overflow: hidden;
+      border-radius: 15px;
+    }
+    .container img, .container video {
+      width: 100%;
+      height: 300px; 
+      object-fit: cover;
+      border: 1px solid #022e4a;
+      border-radius: 15px;
+      display: block;
+      transition: transform 0.4s ease, filter 0.4s ease; /* efek zoom + cerah */
+    }
+    .container:hover img,
+    .container:hover video {
+      transform: scale(1.1); 
+      filter: brightness(1.1); 
+    }
+    .overlay {
+      position: absolute;
+      bottom: -100%;
+      left: 0; right: 0;
+      background: rgba(2,46,74,0.85);
+      color: #fff;
+      padding: 10px;
+      text-align: center;
+      font-weight: 600; /* overlay bold */
+      transition: all 0.5s ease;
+    }
+    .container:hover .overlay {
+      bottom: 0;
+    }
+
+    footer {
+            background: #507593;
+            color: #ffffff;
+            text-align: center;
+            padding: 15px;
+            font-weight: 600; /* footer bold */
+        }
+  </style>
+</head>
+<body>
+
+  <header>
+    <h1>Welcome To Aisyah's World</h1>
+    <p>A journey through my passions, growth and experiences</p>
+  </header>
+
+  <nav>
+    <a href="index.html">HOME</a>
+    <a href="about me.html">ABOUT ME</a>
+    <a href="experience.html">EXPERIENCE</a>
+    <a href="education.html">EDUCATION</a>
+    <a href="family.html">FAMILY</a>
+    <a href="gallery.html">GALLERY</a>
+  </nav>
+
+  <main>
+    <!-- Family Section -->
+    <section id="family">
+      <h2>My Family</h2>
+      <p>
+Family is my greatest source of love and strength. Each member plays a special role in shaping who I am today, 
+teaching me lessons about patience, kindness and resilience. Together, they are the foundation of my happiness 
+and the reason I strive to become a better person every day.
+</p>
+<br>
+      
+      <div class="gallery-grid">
+        <div class="container"><img src="family1.jpg"><div class="overlay">Raya Picture In Raya Studio</div></div>
+        <div class="container"><img src="family13.jpg"><div class="overlay">My Mother</div></div>
+        <div class="container"><img src="family12.jpg"><div class="overlay">My Last Brother</div></div>
+        <div class="container"><img src="family2.jpg"><div class="overlay">Childhood Picture</div></div>
+        <div class="container"><img src="family3.jpg"><div class="overlay">My Mother With Me</div></div>
+        <div class="container"><img src="family11.jpg"><div class="overlay">My Little Brother</div></div>
+        <div class="container"><img src="family4.jpg"><div class="overlay">My Sister With Me</div></div>
+        <div class="container"><img src="family10.jpg"><div class="overlay">My Sister</div></div>
+        <div class="container"><img src="family5.jpg"><div class="overlay">Selfie Picture Family</div></div>
+        <div class="container"><img src="family9.jpg"><div class="overlay">My Second Sister</div></div>
+        <div class="container"><img src="family6.jpg"><div class="overlay">My Father</div></div>
+        <div class="container"><img src="family8.jpg"><div class="overlay">My Mother With Me</div></div>
+        <div class="container"><img src="family7.jpg"><div class="overlay">Childhood Picture</div></div>
+      </div>
+    </section>
+  </main>
+  
+  <footer>
+        <a href="https://www.instagram.com/aisyahnizm_" target="_blank">
+            <img src="insta2.png" alt="Instagram" width="100" height="100">
+        </a>
+        <a href="https://t.me/imutgal" target="_blank">
+            <img src="tele3.png" alt="Telegram" width="100" height="100">
+        </a>
+        <a href="https://www.tiktok.com/@imutgall" target="_blank">
+            <img src="tiktok2.png" alt="TikTok" width="100" height="100">
+        </a>
+        <br>
+        <a href="https://mail.google.com/mail/?view=cm&fs=1&to=aisyahnajihah3003@gmail.com" target="_blank">Email Me !</a>
+        <p>&copy;2026 Aisyah Najihah | All Rights Reserved</p>
+    </footer>
+
+</body>
+</html>

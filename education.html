@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Aisyah's Education 🎓</title>
+	<!-- Import Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&family=Raleway:wght@700&display=swap" rel="stylesheet">
+    <style>
+        /* ====== GLOBAL STYLE ====== */
+     html, body {
+           height: 100%;
+           margin: 0;
+           display: flex;
+           flex-direction: column;
+           font-family: Poppins, sans-serif;
+           font-size: 16px;
+           font-weight: 600; /* semua teks bold */
+           background: url('wallpaper3.jpg') no-repeat center center fixed;
+           background-size: cover;
+           color: #333;
+        }
+        header {
+            background: #022e4a;
+            background-image: url('pantai.jpg');
+            background-size: 2000px 300px;
+            color: #ffffff;
+            padding: 20px 0;
+            text-align: center;
+        }
+        header h1 {
+            margin: 0;
+            font-size: 2.5em;
+            font-family: 'Raleway', sans-serif;
+            font-weight: 700; /* heading bold */
+            animation: bounce 1s infinite;
+        }
+        @keyframes bounce {
+            0%, 100% { transform: translateY(0); }
+            50% { transform: translateY(-10px); }
+        }
+
+        nav {
+            background: #507593;
+            padding: 10px;
+            text-align: center;
+            position: sticky;
+            top: 0;
+        }
+        nav a {
+            color: #ffffff;
+            margin: 15px;
+            text-decoration: none;
+            font-weight: 700; /* bold menu */
+        }
+        nav a:hover {
+            color: yellow;
+        }
+        main {
+            flex: 1;
+        }
+        section {
+            padding: 40px;
+            max-width: 1000px;
+            margin: auto;
+        }
+        h2 {
+            color: #022e4a;
+            border-bottom: 2px solid #022e4a;
+            padding-bottom: 5px;
+            font-weight: 700; /* bold heading */
+        }
+
+        /* ====== TABLE STYLE ====== */
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin: 20px 0;
+            font-weight: 600; /* bold table text */
+        }
+        th, td {
+            border: 1px solid #333;
+            padding: 10px;
+            text-align: center;
+            vertical-align: middle;
+        }
+        th {
+            background-color: #f2f2f2;
+            font-weight: 700; /* bold header table */
+        }
+        tr:nth-child(even) {
+            background-color: #f9f9f9;
+        }
+        tr:hover {
+            background-color: #d0e6fa;
+        }
+        .school-img {
+            width: 120px;
+            border-radius: 10px;
+            margin-bottom: 10px;
+        }
+        audio {
+            width: 200px;
+        }
+        td ul {
+            list-style-type: disc;
+            padding-left: 20px;
+            text-align: left;
+        }
+
+        footer {
+            background: #507593;
+            color: #ffffff;
+            text-align: center;
+            padding: 15px;
+            font-weight: 600; /* footer bold */
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <h1>Welcome to Aisyah's World</h1>
+        <p>A journey through my passions, growth and experiences</p>
+    </header>
+
+    <nav>
+        <a href="index.html">HOME</a>
+        <a href="about me.html">ABOUT ME</a>
+        <a href="experience.html">EXPERIENCE</a>
+        <a href="education.html">EDUCATION</a>
+        <a href="family.html">FAMILY</a>
+        <a href="gallery.html">GALLERY</a>
+    </nav>
+
+    <main>
+        <section id="Education">
+            <h2>Education</h2>
+			<p> Education has been the foundation of my journey. Through each stage of learning, I’ve built knowledge, sharpened my abilities and discovered passions that continue to shape my future.</p>
+			<br>
+            <table>
+                <tr>
+                    <th>Year</th>
+                    <th>Institution</th>
+                    <th>Qualification</th>
+                    <th>Activities</th>
+                </tr>
+                <tr>
+                    <td>2015 - 2017</td>
+                    <td>
+						<br>
+                        <img src="sks13.png" alt="Sekolah Rendah" class="school-img"><br>
+                        SKS Seksyen 13<br>
+                        <br>
+                        <audio controls>
+                            <source src="lagu sks13.mp4" type="audio/mpeg" autoplay>
+                            Your browser does not support the audio element.
+                        </audio>
+                    </td>
+                    <td>UPSR Certificate</td>
+                    <td>
+                        <ul>
+                            <li>Unit Uniform Pengakap</li>
+                            <li>Archery</li>
+                            <li>Kelab Bahasa Melayu</li>
+                        </ul>
+                    </td>
+                </tr>
+                <tr>
+                    <td>2018 - 2022</td>
+                    <td>
+						<br>
+                        <img src="smks9.png" alt="Sekolah Menengah" class="school-img"><br>
+                        SMK Seksyen 9<br>
+                        <br>
+                        <audio controls>
+                            <source src="lagu smks9.mp4" type="audio/mpeg">
+                            Your browser does not support the audio element.
+                        </audio>
+                    </td>
+                    <td>High School Certificate</td>
+                    <td>
+                        <ul>
+                            <li>Kadet Remaja Sekolah</li>
+                            <li>Kawad Kaki Rumah Sukan Suria</li>
+                            <li>Badminton Team</li>
+                            <li>SPBT Club</li>
+                        </ul>
+                    </td>
+                </tr>
+                <tr>
+                    <td>2024 - 2026</td>
+                    <td>
+						<br>
+                        <img src="uitm logo.png" alt="UiTM" class="school-img"><br>
+                        UiTM Cawangan Segamat, Johor<br>
+                        <br>
+                        <audio controls>
+                            <source src="lagu uitm.mp4" type="audio/mpeg">
+                            Your browser does not support the audio element.
+                        </audio>
+                    </td>
+                    <td>Diploma in Information Management</td>
+                    <td>
+                        <ul>
+                            <li>Information Management Society Club (IMS)</li>
+                        </ul>
+                    </td>
+                </tr>
+            </table>
+        </section>
+    </main>
+    
+   <footer>
+        <a href="https://www.instagram.com/aisyahnizm_" target="_blank">
+            <img src="insta2.png" alt="Instagram" width="100" height="100">
+        </a>
+        <a href="https://t.me/imutgal" target="_blank">
+            <img src="tele3.png" alt="Telegram" width="100" height="100">
+        </a>
+        <a href="https://www.tiktok.com/@imutgall" target="_blank">
+            <img src="tiktok2.png" alt="TikTok" width="100" height="100">
+        </a>
+        <br>
+        <a href="https://mail.google.com/mail/?view=cm&fs=1&to=aisyahnajihah3003@gmail.com" target="_blank">Email Me !</a>
+        <p>&copy;2026 Aisyah Najihah | All Rights Reserved</p>
+    </footer>
+
+</body>
+</html>

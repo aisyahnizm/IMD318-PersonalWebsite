@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>	Aisyah's Website 💙</title>
+    <!-- Import Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@600&family=Raleway:wght@700&display=swap" rel="stylesheet">
+    <style>
+        * { box-sizing: border-box; }
+
+        html, body {
+           height: 100%;
+		   margin: 0;
+           display: flex;
+           flex-direction: column;
+           font-family: Poppins, sans-serif;
+           font-size: 16px; /* optional: tetapkan saiz asas */
+           background: url('wallpaper3.jpg') no-repeat center center fixed;
+           background-size: cover;
+           color: #333;
+        }
+        header {
+            background: #022e4a;
+            background-image: url('pantai.jpg');
+            background-size: 2000px 300px;
+            color: #ffffff;
+            padding: 20px 0;
+            text-align: center;
+        }
+        header h1 {
+            margin: 0;
+            font-size: 2.8em;
+            font-family: 'Raleway', sans-serif;
+            animation: bounce 1s infinite;
+        }
+        @keyframes bounce {
+            0%, 100% { transform: translateY(0); }
+            50% { transform: translateY(-10px); }
+        }
+
+        nav {
+            background: #507593;
+            padding: 10px;
+            text-align: center;
+            position: sticky;
+            top: 0;
+        }
+        nav a {
+            color: #ffffff;
+            margin: 0 15px;
+            text-decoration: none;
+            font-weight: bold;
+        }
+        nav a:hover { color: yellow; }
+
+        main { flex: 1; }
+        section {
+            padding: 40px;
+            max-width: 900px;
+            margin: auto;
+        }
+        h2 {
+            color: #022e4a;
+            border-bottom: 2px solid #022e4a;
+            padding-bottom: 5px;
+        }
+
+        /* Countdown style */
+        .countdown {
+            font-size: 1.5em;
+            color: #022e4a;
+            text-align: center;
+            margin-bottom: 50px;
+            background: #e2d8cb;
+            padding: 5px;
+            border-radius: 200px;
+            border: 0px solid #56081d;
+        }
+
+        /* Animated icon */
+        .icon {
+            width: 100px;
+            height: 100px;
+            margin: 10px auto;
+            animation: spin 1s linear infinite;
+        }
+        @keyframes spin {
+            from { transform: rotate(0deg); }
+            to { transform: rotate(360deg); }
+        }
+
+        /* Search List */
+        #myInput {
+            background-image: url('/css/searchicon.png');
+            background-position: 10px 12px;
+            background-repeat: no-repeat;
+            width: 100%;
+            font-size: 16px;
+            padding: 12px 20px 12px 40px;
+            border: 1px solid #ddd;
+            margin-bottom: 12px;
+        }
+        #myUL {
+            list-style-type: none;
+            padding: 0;
+            margin: 0;
+        }
+        #myUL li a {
+            border: 1px solid #ddd;
+            margin-top: -1px;
+            background-color: #f6f6f6;
+            padding: 12px;
+            text-decoration: none;
+            font-size: 18px;
+            color: #022e4a;
+            display: block;
+        }
+        #myUL li a:hover:not(.header) { background-color: #eee; }
+
+        footer {
+            background: #507593;
+            color: #ffffff;
+            text-align: center;
+            padding: 15px;
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <br>
+        <h1>Welcome to Aisyah's World</h1>
+        <p>A journey through my passions, growth and experiences</p>
+        <br>
+    </header>
+
+    <nav>
+        <a href="index.html">HOME</a>
+        <a href="about me.html">ABOUT ME</a>
+        <a href="experience.html">EXPERIENCE</a>
+        <a href="education.html">EDUCATION</a>
+        <a href="family.html">FAMILY</a>
+        <a href="gallery.html">GALLERY</a>
+    </nav>
+
+    <main>
+        <section id="home">
+            <!-- Countdown atas perkataan Home Page -->
+            <div class="countdown">
+                <p>End of Diploma Journey !</p>
+                <p id="timer"></p>
+                <img src="star.png" alt="icon" class="icon">
+            </div>
+
+            <h2>Home Page</h2>
+            <p>Welcome to my personal website! Here you’ll discover my journey from about me, experiences, education, family and a gallery of memories.</p>
+        </section>
+
+        <section id="searchlist">
+            <!-- Search tanpa tajuk Phonebook -->
+            <input type="text" id="myInput" onkeyup="myFunction()" placeholder="Search" title="Type in a name">
+            <ul id="myUL">
+                <li><a href="https://simsweb.uitm.edu.my/SPORTAL_APP/SPORTAL_LOGIN/index_login.htm">Student Portal</a></li>
+                <li><a href="https://mystudent.uitm.edu.my/login">mystudent</a></li>
+                <li><a href="https://ufuture.uitm.edu.my/login">ufuture</a></li>
+                <li><a href="https://permata.uitm.edu.my/index.php?lang=en">PERMATA</a></li>
+                <li><a href="https://uitm.edu.my/index.php/en">UITM</a></li>
+                <li><a href="https://ofa.arkib.gov.my/portal/index.php/en">OFA</a></li>
+                <li><a href="https://www.lisedunetwork.com/what-is-information-management/">Information Management</a></li>
+            </ul>
+        </section>
+    </main>
+
+    <footer>
+    
+        <a href="https://www.instagram.com/aisyahnizm_" target="_blank">
+            <img src="insta2.png" alt="Instagram" width="100" height="100">
+        </a>
+        <a href="https://t.me/imutgal" target="_blank">
+            <img src="tele3.png" alt="Telegram" width="100" height="100">
+        </a>
+        <a href="https://www.tiktok.com/@imutgall" target="_blank">
+            <img src="tiktok2.png" alt="TikTok" width="100" height="100">
+        </a>
+        <br>
+        <a href="https://mail.google.com/mail/?view=cm&fs=1&to=aisyahnajihah3003@gmail.com" target="_blank">Email Me !</a>
+        <p>&copy;2026 Aisyah Najihah | All Rights Reserved</p>
+    </footer>
+
+    <script>
+        // Countdown Script
+        var countDownDate = new Date("Aug 5, 2026 00:00:00").getTime();
+        var x = setInterval(function() {
+            var now = new Date().getTime();
+            var distance = countDownDate - now;
+
+            var days = Math.floor(distance / (1000 * 60 * 60 * 24));
+            var hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+            var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+            var seconds = Math.floor((distance % (1000 * 60)) / 1000);
+
+            document.getElementById("timer").innerHTML = days + "d " + hours + "h "
+            + minutes + "m " + seconds + "s ";
+
+            if (distance < 0) {
+                clearInterval(x);
+                document.getElementById("timer").innerHTML = "Congratulations! Diploma Completed 🎉";
+            }
+        }, 1000);
+
+        // Search Script
+        function myFunction() {
+            var input, filter, ul, li, a, i, txtValue;
+            input = document.getElementById("myInput");
+            filter = input.value.toUpperCase();
+            ul = document.getElementById("myUL");
+            li = ul.getElementsByTagName("li");
+            for (i = 0; i < li.length; i++) {
+                a = li[i].getElementsByTagName("a")[0];
+                txtValue = a.textContent || a.innerText;
+                if (txtValue.toUpperCase().indexOf(filter) > -1) {
+                    li[i].style.display = "";
+                } else {
+                    li[i].style.display = "none";
+                }
+            }
+        }
+    </script>
+
+</body>
+</html>
